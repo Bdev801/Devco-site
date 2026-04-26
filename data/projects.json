@@ -7,7 +7,7 @@
     "services": ["Bathroom Remodeling", "Accessibility Upgrades"],
     "beforeImage": "accessible_before.jpg",
     "afterImage": "accessible_after.jpg",
-    "galleryImages": [],
+    "galleryImages": ["accessible-shower.jpg"],
     "altBase": "Accessible bathroom remodel in {city} Utah",
     "caption": "Converted bathroom for accessibility with modern finishes",
     "preferredCities": ["West Valley City", "Kearns", "Taylorsville"]
@@ -23,20 +23,27 @@
     "galleryImages": [],
     "altBase": "Bathroom remodel project in {city} Utah",
     "caption": "Full bathroom renovation with updated tile and fixtures",
-    "preferredCities": ["Layton", "Clearfield", "Ogden"]
+    "preferredCities": ["Layton", "Clearfield", "Ogden", "Bountiful"]
   },
   {
     "id": "magna-bathroom",
     "title": "Magna Bathroom Remodel",
     "location": "Magna",
     "type": "bathroom",
-    "services": ["Bathroom Remodeling"],
+    "services": ["Bathroom Remodeling", "Custom Tile"],
     "beforeImage": "magna_before.jpg",
     "afterImage": "magna_after.jpg",
-    "galleryImages": [],
+    "galleryImages": [
+      "magna-gallery1.jpg",
+      "magna-bathroom.jpg",
+      "magna-tile.jpg",
+      "magna-sentrel.jpg",
+      "magna-basement.jpg",
+      "magna-compare.jpg"
+    ],
     "altBase": "Bathroom remodel in {city} Utah by Devco Construction",
-    "caption": "Modernized bathroom with clean tile work",
-    "preferredCities": ["Magna", "West Valley City"]
+    "caption": "Modernized bathroom with custom tile work and gray large format shower",
+    "preferredCities": ["Magna", "West Valley City", "Kearns"]
   },
   {
     "id": "stansbury-bathroom",
@@ -49,20 +56,27 @@
     "galleryImages": [],
     "altBase": "Bathroom remodel in {city} Utah",
     "caption": "Upgraded bathroom with modern finishes",
-    "preferredCities": ["Tooele", "Stansbury Park"]
+    "preferredCities": ["Tooele", "Stansbury Park", "Herriman"]
   },
   {
     "id": "taylorsville-bathroom",
-    "title": "Taylorsville Bathroom Remodel",
+    "title": "Taylorsville Custom Tile Shower",
     "location": "Taylorsville",
     "type": "bathroom",
-    "services": ["Bathroom Remodeling", "Tile Showers"],
+    "services": ["Bathroom Remodeling", "Custom Tile Showers"],
     "beforeImage": "taylorsville_before.jpg",
     "afterImage": "taylorsville_after.jpg",
-    "galleryImages": [],
-    "altBase": "Bathroom remodel in {city} Utah by Devco",
-    "caption": "Custom tile shower and full remodel",
-    "preferredCities": ["Taylorsville", "Murray"]
+    "galleryImages": [
+      "taylorsville-gallery1.jpg",
+      "taylorsville-bathroom.jpg",
+      "taylorsville-tile.jpg",
+      "taylorsville-sentrel.jpg",
+      "taylorsville-basement.jpg",
+      "taylorsville-compare.jpg"
+    ],
+    "altBase": "Custom tile shower remodel in {city} Utah by Devco",
+    "caption": "Large format marble-look tile shower with dual heads, teak bench and hex penny floor",
+    "preferredCities": ["Taylorsville", "Murray", "Millcreek", "South Jordan"]
   },
   {
     "id": "tooele-bathroom",
@@ -75,7 +89,7 @@
     "galleryImages": [],
     "altBase": "Bathroom remodel project in {city} Utah",
     "caption": "Complete renovation improving layout and finish",
-    "preferredCities": ["Tooele"]
+    "preferredCities": ["Tooele", "Stansbury Park"]
   },
   {
     "id": "washington-terrace-bathroom",
@@ -88,6 +102,111 @@
     "galleryImages": [],
     "altBase": "Bathroom remodel in {city} Utah",
     "caption": "Updated bathroom with new fixtures and tile",
-    "preferredCities": ["Ogden", "Roy"]
+    "preferredCities": ["Ogden", "Roy", "Washington Terrace"]
+  },
+  {
+    "id": "kearns-tile-shower",
+    "title": "Kearns Custom Tile Shower",
+    "location": "Kearns",
+    "type": "bathroom",
+    "services": ["Custom Tile Showers", "Bathroom Remodeling"],
+    "beforeImage": "kearns-compare.jpg",
+    "afterImage": "kearns-bathroom.jpg",
+    "galleryImages": [
+      "kearns-gallery1.jpg",
+      "kearns-bathroom.jpg",
+      "kearns-tile.jpg",
+      "kearns-sentrel.jpg",
+      "kearns-basement.jpg",
+      "kearns-compare.jpg"
+    ],
+    "altBase": "Custom tile shower installation in {city} Utah",
+    "caption": "Gray large format tile shower with hex mosaic floor strip, dual niches, rain head and glass door",
+    "preferredCities": ["Kearns", "Magna", "West Valley City", "Taylorsville"]
+  },
+  {
+    "id": "midvale-bathroom",
+    "title": "Midvale Bathroom Remodel",
+    "location": "Midvale",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling", "Custom Tile Showers"],
+    "beforeImage": "midvale-compare.jpg",
+    "afterImage": "midvale-bathroom.jpg",
+    "galleryImages": [
+      "midvale-gallery1.jpg",
+      "midvale-bathroom.jpg",
+      "midvale-tile.jpg",
+      "midvale-sentrel.jpg",
+      "midvale-basement.jpg",
+      "midvale-compare.jpg"
+    ],
+    "altBase": "Bathroom remodel in {city} Utah by Devco Construction",
+    "caption": "Gray large format tile shower with sliding glass door, rain head and built-in niche",
+    "preferredCities": ["Midvale", "Murray", "Millcreek", "Sandy"]
+  },
+  {
+    "id": "sentrel-shower",
+    "title": "Sentrel Solid Surface Shower",
+    "location": "Salt Lake County",
+    "type": "bathroom",
+    "services": ["Sentrel Shower Systems"],
+    "beforeImage": "sentrel-compare.jpg",
+    "afterImage": "sentrel-install.jpg",
+    "galleryImages": [
+      "sentrel-install.jpg",
+      "sentrel-compare.jpg",
+      "sentrel-shower.jpg"
+    ],
+    "altBase": "Sentrel shower system installation in {city} Utah",
+    "caption": "Sentrel solid surface shower panels — no grout lines, built for rental and ADU projects",
+    "preferredCities": ["Kearns", "Magna", "Taylorsville", "Tooele", "Herriman", "Eagle Mountain", "Saratoga Springs", "Lehi"]
+  },
+  {
+    "id": "basement-finish",
+    "title": "Basement Finishing",
+    "location": "Salt Lake County",
+    "type": "basement",
+    "services": ["Basement Finishing"],
+    "beforeImage": null,
+    "afterImage": "basement-finishing.jpg",
+    "galleryImages": [
+      "basement-finishing.jpg",
+      "midvale-basement.jpg",
+      "kearns-basement.jpg",
+      "taylorsville-basement.jpg"
+    ],
+    "altBase": "Basement finishing project in {city} Utah",
+    "caption": "Finished basement with LVP flooring, drywall, egress windows and bathroom rough-in",
+    "preferredCities": ["Murray", "Millcreek", "South Jordan", "Sandy", "Draper", "Herriman", "Cottonwood Heights", "Holladay"]
+  },
+  {
+    "id": "custom-tile-hero",
+    "title": "Custom Tile Shower — Marble Look",
+    "location": "Salt Lake County",
+    "type": "bathroom",
+    "services": ["Custom Tile Showers"],
+    "beforeImage": null,
+    "afterImage": "custom-tile-shower.jpg",
+    "galleryImages": [
+      "custom-tile-shower.jpg",
+      "gallery1.jpg",
+      "bathroom-remodel.jpg"
+    ],
+    "altBase": "Custom tile shower installation in {city} Utah",
+    "caption": "White marble large format tile shower with black fixtures, hex accent and built-in niches",
+    "preferredCities": ["Draper", "Sandy", "Cottonwood Heights", "Holladay", "South Jordan", "Murray", "Millcreek", "Provo", "Orem", "Lehi"]
+  },
+  {
+    "id": "washington-terrace-2",
+    "title": "Washington Terrace Remodel 2",
+    "location": "Washington Terrace",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling", "Tile Installation"],
+    "beforeImage": "washington_terrace2_before.jpg",
+    "afterImage": "washington_terrace2_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom renovation in {city} Utah",
+    "caption": "Second bathroom remodel project in the Washington Terrace area",
+    "preferredCities": ["Ogden", "Roy", "Layton", "Clearfield", "Syracuse"]
   }
 ]
