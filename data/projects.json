@@ -1,0 +1,93 @@
+[
+  {
+    "id": "accessible-bathroom",
+    "title": "Accessible Bathroom Remodel",
+    "location": "Salt Lake Area",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling", "Accessibility Upgrades"],
+    "beforeImage": "accessible_before.jpg",
+    "afterImage": "accessible_after.jpg",
+    "galleryImages": [],
+    "altBase": "Accessible bathroom remodel in {city} Utah",
+    "caption": "Converted bathroom for accessibility with modern finishes",
+    "preferredCities": ["West Valley City", "Kearns", "Taylorsville"]
+  },
+  {
+    "id": "clearfield-bathroom",
+    "title": "Clearfield Bathroom Remodel",
+    "location": "Clearfield",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling", "Tile Installation"],
+    "beforeImage": "clearfield_before.jpg",
+    "afterImage": "clearfield_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel project in {city} Utah",
+    "caption": "Full bathroom renovation with updated tile and fixtures",
+    "preferredCities": ["Layton", "Clearfield", "Ogden"]
+  },
+  {
+    "id": "magna-bathroom",
+    "title": "Magna Bathroom Remodel",
+    "location": "Magna",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling"],
+    "beforeImage": "magna_before.jpg",
+    "afterImage": "magna_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel in {city} Utah by Devco Construction",
+    "caption": "Modernized bathroom with clean tile work",
+    "preferredCities": ["Magna", "West Valley City"]
+  },
+  {
+    "id": "stansbury-bathroom",
+    "title": "Stansbury Bathroom Remodel",
+    "location": "Stansbury Park",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling"],
+    "beforeImage": "stansbury_before.jpg",
+    "afterImage": "stansbury_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel in {city} Utah",
+    "caption": "Upgraded bathroom with modern finishes",
+    "preferredCities": ["Tooele", "Stansbury Park"]
+  },
+  {
+    "id": "taylorsville-bathroom",
+    "title": "Taylorsville Bathroom Remodel",
+    "location": "Taylorsville",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling", "Tile Showers"],
+    "beforeImage": "taylorsville_before.jpg",
+    "afterImage": "taylorsville_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel in {city} Utah by Devco",
+    "caption": "Custom tile shower and full remodel",
+    "preferredCities": ["Taylorsville", "Murray"]
+  },
+  {
+    "id": "tooele-bathroom",
+    "title": "Tooele Bathroom Remodel",
+    "location": "Tooele",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling"],
+    "beforeImage": "tooele_before.jpg",
+    "afterImage": "tooele_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel project in {city} Utah",
+    "caption": "Complete renovation improving layout and finish",
+    "preferredCities": ["Tooele"]
+  },
+  {
+    "id": "washington-terrace-bathroom",
+    "title": "Washington Terrace Bathroom Remodel",
+    "location": "Washington Terrace",
+    "type": "bathroom",
+    "services": ["Bathroom Remodeling"],
+    "beforeImage": "washington_terrace_before.jpg",
+    "afterImage": "washington_terrace_after.jpg",
+    "galleryImages": [],
+    "altBase": "Bathroom remodel in {city} Utah",
+    "caption": "Updated bathroom with new fixtures and tile",
+    "preferredCities": ["Ogden", "Roy"]
+  }
+]
