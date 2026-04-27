@@ -826,14 +826,14 @@
   </div>
   <div class="before-after-grid reveal">
     <div class="ba-set">
-      <h4>Bathroom Remodel — Taylorsville, UT</h4>
+      <h4>Bathroom Remodel — Salt Lake City, UT</h4>
       <div class="ba-imgs">
         <div>
-          <div class="ba-img-wrap"><img src="taylorsville_before.jpg" alt="Before bathroom remodel Taylorsville Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/slc_before.jpg" alt="Before bathroom remodel Salt Lake City" loading="lazy" /></div>
           <span class="ba-label before">Before</span>
         </div>
         <div>
-          <div class="ba-img-wrap"><img src="taylorsville_after.jpg" alt="After bathroom remodel Taylorsville Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/slc_after.jpg" alt="After bathroom remodel Salt Lake City" loading="lazy" /></div>
           <span class="ba-label after">After</span>
         </div>
       </div>
@@ -842,24 +842,24 @@
       <h4>Basement Finishing — Tooele, UT</h4>
       <div class="ba-imgs">
         <div>
-          <div class="ba-img-wrap"><img src="tooele_before.jpg" alt="Before basement finishing Tooele Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/tooele_before.jpg" alt="Before basement finishing Tooele Utah" loading="lazy" /></div>
           <span class="ba-label before">Before</span>
         </div>
         <div>
-          <div class="ba-img-wrap"><img src="tooele_after.jpg" alt="After basement finishing Tooele Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/tooele_after.jpg" alt="After basement finishing Tooele Utah" loading="lazy" /></div>
           <span class="ba-label after">After</span>
         </div>
       </div>
     </div>
     <div class="ba-set">
-      <h4>Bathroom Remodel — Washington Terrace, UT</h4>
+      <h4>Bathroom Remodel — Millcreek, UT</h4>
       <div class="ba-imgs">
         <div>
-          <div class="ba-img-wrap"><img src="washington_terrace_before.jpg" alt="Before bathroom remodel Washington Terrace Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/millcreek_before.jpg" alt="Before bathroom remodel Millcreek Utah" loading="lazy" /></div>
           <span class="ba-label before">Before</span>
         </div>
         <div>
-          <div class="ba-img-wrap"><img src="washington_terrace_after.jpg" alt="After bathroom remodel Washington Terrace Utah" loading="lazy" /></div>
+          <div class="ba-img-wrap"><img src="before-after/millcreek_after.jpg" alt="After bathroom remodel Millcreek Utah" loading="lazy" /></div>
           <span class="ba-label after">After</span>
         </div>
       </div>
@@ -910,7 +910,7 @@
         Devco is more than a business — it's a family name that's been synonymous with quality remodeling since 1980. Brian's father started Devco Bathroom Remodeling in Southern California, and Brian carried on that legacy with over 20 years of hands-on experience in tile, waterproofing and custom bathroom work.
       </p>
       <p style="color:var(--gray);margin-bottom:1.5rem;line-height:1.8;">
-        After reopening in Utah in 2021, Brian personally manages every project from estimate to final walkthrough. When specialty work calls for additional hands, Brian brings in trusted contractors from his vetted network — people he knows and vouches for personally. Honest work, fair pricing, and craftsmanship that treats your home like his own. Licensed, insured and BBB Accredited.
+        After reopening in Utah in 2021, Brian runs every project himself with no subcontractor surprises — just honest work, fair pricing and craftsmanship that treats your home like his own. Licensed, insured and BBB Accredited.
       </p>
       <div class="about-creds">
         <span class="cred-badge">✓ Utah Licensed Contractor</span>
@@ -970,10 +970,10 @@
     </div>
     <div class="faq-item">
       <button class="faq-q" aria-expanded="false">
-        Do you work alone or bring in other contractors?
+        Do you use subcontractors or is it your own crew?
         <span class="arrow">▼</span>
       </button>
-      <div class="faq-a">Brian personally manages every project and is your single point of contact from estimate to final walkthrough. When a project calls for specialty trades, Brian brings in contractors from his trusted personal network — people he has worked with and stands behind. You always know who is in your home and why.</div>
+      <div class="faq-a">Brian personally oversees every project and does the work himself with a trusted, vetted crew. You won't get a random subcontractor showing up — you get the same quality, accountable team from day one to the final walkthrough.</div>
     </div>
   </div>
 </section>
@@ -1146,28 +1146,26 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    // IMPORTANT: Replace 'YOUR_FORM_ID' below with your Formspree form ID
-    // Sign up free at formspree.io → New Form → copy the ID
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
-
     try {
       const data = new FormData(form);
-      // Add source tracking
-      data.append('_subject', `New Lead from devcoconstructionllc.com — ${svc}`);
-      data.append('source', 'Website Contact Form');
+      const params = new URLSearchParams();
+      params.append('entry.name', fname + ' ' + document.getElementById('lname').value.trim());
+      params.append('entry.phone', phone);
+      params.append('entry.email', document.getElementById('email').value.trim());
+      params.append('entry.city', city);
+      params.append('entry.service', svc);
+      params.append('entry.message', document.getElementById('message').value.trim());
 
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfjczOPVcfTe6SkGqmJbkFmSxoVEL01vHPjZ1XJXGcY6QKeXA/formResponse', {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: params,
+        mode: 'no-cors'
       });
 
-      if (res.ok) {
-        formSuccess.style.display = 'block';
-        form.reset();
-      } else {
-        throw new Error('Form submission failed');
-      }
+      // Google Forms uses no-cors so we always show success after submit
+      formSuccess.style.display = 'block';
+      form.reset();
+
     } catch (err) {
       formError.style.display = 'block';
       formError.innerHTML = '⚠️ Something went wrong. Call or text Brian directly at <a href="tel:3853810982">(385) 381-0982</a>.';
