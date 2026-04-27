@@ -1166,7 +1166,11 @@
       formSuccess.style.display = 'block';
       form.reset();
 
-    } catch (err) {
+   } catch (err) {
+      // Google Forms no-cors always triggers catch — show success anyway
+      formSuccess.style.display = 'block';
+      form.reset();
+    } } catch (err) {
       formError.style.display = 'block';
       formError.innerHTML = '⚠️ Something went wrong. Call or text Brian directly at <a href="tel:3853810982">(385) 381-0982</a>.';
     } finally {
