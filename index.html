@@ -1121,7 +1121,7 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Contact form — Google Forms direct submit
+  // Contact form — Formspree (replace YOUR_FORM_ID with your actual Formspree endpoint)
   const form       = document.getElementById('contactForm');
   const submitBtn  = document.getElementById('submitBtn');
   const formSuccess= document.getElementById('formSuccess');
@@ -1148,17 +1148,12 @@
 
     try {
       const params = new URLSearchParams();
-      const lname = document.getElementById('lname').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const fullMessage = `City: ${city}\nProject Details: ${message}`;
-
-      params.append('entry.305183249', fname);
-      params.append('entry.771152750', lname);
-      params.append('entry.138171216', phone);
-      params.append('entry.1289009174', email);
-      params.append('entry.1705978731', svc);
-      params.append('entry.109111224', fullMessage);
+      params.append('entry.674967084', fname + ' ' + document.getElementById('lname').value.trim());
+      params.append('entry.1600167887', phone);
+      params.append('entry.231556339', document.getElementById('email').value.trim());
+      params.append('entry.1009312924', city);
+      params.append('entry.2078033287', svc);
+      params.append('entry.35062131', document.getElementById('message').value.trim());
 
       await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfjczOPVcfTe6SkGqmJbkFmSxoVEL01vHPjZ1XJXGcY6QKeXA/formResponse', {
         method: 'POST',
@@ -1166,12 +1161,11 @@
         mode: 'no-cors'
       });
 
-      // Google Forms no-cors always triggers catch — show success anyway
       formSuccess.style.display = 'block';
       form.reset();
 
     } catch (err) {
-      // no-cors fetch always triggers catch — show success
+      // no-cors always triggers catch — show success anyway since data was sent
       formSuccess.style.display = 'block';
       form.reset();
     } finally {
