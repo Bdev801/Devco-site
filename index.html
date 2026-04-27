@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  3 <head>
+    4   <meta name="google-site-verification" content="7R1d5NNOVrs9BzdWpVuW5sjTPq6vWOGSVohddiKFpz4" />
+    5   <meta charset="UTF-8" />
+    6   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -21,12 +25,12 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
     "name": "Devco Construction LLC",
     "url": "https://devcoconstructionllc.com",
     "telephone": "+13853810982",
     "email": "brian@devcoconstructionllc.com",
-    "description": "Licensed bathroom remodeling, basement finishing, custom tile showers and whole home renovations in Salt Lake County, Utah. Family-owned since 1980.",
+    "description": "Licensed bathroom remodeling, custom tile showers, basement finishing, kitchen remodeling, and home renovation across Salt Lake County, Davis County, Tooele County, Weber County, and Utah County, Utah — with a focus on Salt Lake County and surrounding cities. Family-owned since 1980.",
     "foundingDate": "2021",
     "founder": { "@type": "Person", "name": "Brian Deveraux" },
     "address": {
@@ -36,9 +40,17 @@
       "addressCountry": "US"
     },
     "areaServed": [
+      "Utah",
+      "Salt Lake County", "Davis County", "Tooele County", "Weber County", "Utah County",
       "Salt Lake City", "West Valley City", "Sandy", "Draper",
       "Murray", "Midvale", "Taylorsville", "Kearns", "Magna",
       "Millcreek", "Herriman", "South Jordan", "Tooele"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom remodeling" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom tile showers" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Basement finishing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen remodeling" } }
     ],
     "openingHours": "Mo-Sa 07:00-20:00",
     "priceRange": "$$",
@@ -561,6 +573,41 @@
       color: #991b1b; font-size: .875rem; margin-top: .75rem;
     }
 
+    /* ─── SERVICE AREA PAGE LINKS ─── */
+    .service-areas-links {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .service-areas-links .section-sub { max-width: 720px; margin-left: auto; margin-right: auto; }
+    .service-areas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+      justify-content: center;
+      margin-top: 1.75rem;
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .service-areas-grid a {
+      display: inline-block;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: .45rem .95rem;
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--navy);
+      text-decoration: none;
+      transition: background .2s, border-color .2s, color .2s;
+    }
+    .service-areas-grid a:hover {
+      background: rgba(200,146,42,.1);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
     /* ─── FOOTER ─── */
     footer {
       background: #060f1a; color: rgba(255,255,255,.55);
@@ -1076,6 +1123,54 @@
   </div>
 </section>
 
+<!-- ─── SERVICE AREAS (INTERNAL LINKS) ─── -->
+<section id="service-area-pages" class="service-areas-links" aria-labelledby="service-areas-pages-heading">
+  <div style="text-align:center;" class="reveal">
+    <p class="section-label">Local Service Areas</p>
+    <h2 class="section-title" id="service-areas-pages-heading">Service Areas We Proudly Serve</h2>
+    <p class="section-sub">Devco Construction LLC provides bathroom remodeling, custom tile showers, Sentrel shower systems, basement finishing, kitchen remodeling, and home renovation services across Salt Lake County, Davis County, Tooele County, Weber County, and Utah County.</p>
+  </div>
+  <nav class="service-areas-grid reveal" aria-label="City remodeling service pages">
+    <a href="salt-lake-city.html">Salt Lake City</a>
+    <a href="west-valley-city.html">West Valley City</a>
+    <a href="west-jordan.html">West Jordan</a>
+    <a href="taylorsville.html">Taylorsville</a>
+    <a href="kearns.html">Kearns</a>
+    <a href="magna.html">Magna</a>
+    <a href="murray.html">Murray</a>
+    <a href="midvale.html">Midvale</a>
+    <a href="south-jordan.html">South Jordan</a>
+    <a href="draper.html">Draper</a>
+    <a href="riverton.html">Riverton</a>
+    <a href="herriman.html">Herriman</a>
+    <a href="cottonwood-heights.html">Cottonwood Heights</a>
+    <a href="millcreek.html">Millcreek</a>
+    <a href="holladay.html">Holladay</a>
+    <a href="tooele.html">Tooele</a>
+    <a href="eagle-mountain.html">Eagle Mountain</a>
+    <a href="north-salt-lake.html">North Salt Lake</a>
+    <a href="woods-cross.html">Woods Cross</a>
+    <a href="bountiful.html">Bountiful</a>
+    <a href="centerville.html">Centerville</a>
+    <a href="farmington.html">Farmington</a>
+    <a href="kaysville.html">Kaysville</a>
+    <a href="layton.html">Layton</a>
+    <a href="syracuse.html">Syracuse</a>
+    <a href="clearfield.html">Clearfield</a>
+    <a href="ogden.html">Ogden</a>
+    <a href="provo.html">Provo</a>
+    <a href="orem.html">Orem</a>
+    <a href="lehi.html">Lehi</a>
+    <a href="american-fork.html">American Fork</a>
+    <a href="pleasant-grove.html">Pleasant Grove</a>
+    <a href="lindon.html">Lindon</a>
+    <a href="spanish-fork.html">Spanish Fork</a>
+    <a href="springville.html">Springville</a>
+    <a href="payson.html">Payson</a>
+    <a href="saratoga-springs.html">Saratoga Springs</a>
+  </nav>
+</section>
+
 <!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-inner">
@@ -1087,6 +1182,9 @@
     <div>
       © 2025 Devco Construction LLC. All rights reserved. &nbsp;·&nbsp;
       Licensed &amp; Insured in Utah &nbsp;·&nbsp; BBB Accredited
+    </div>
+    <div style="width:100%;flex-basis:100%;text-align:center;padding-top:.35rem;color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.5;">
+      Proudly serving Salt Lake City, West Valley City, West Jordan, Taylorsville, and surrounding areas.
     </div>
   </div>
 </footer>
