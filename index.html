@@ -1147,27 +1147,27 @@
     submitBtn.textContent = 'Sending...';
 
     try {
-      const params = new URLSearchParams();
-      params.append('entry.674967084', fname + ' ' + document.getElementById('lname').value.trim());
-      params.append('entry.1600167887', phone);
-      params.append('entry.231556339', document.getElementById('email').value.trim());
-      params.append('entry.1009312924', city);
-      params.append('entry.2078033287', svc);
-      params.append('entry.35062131', document.getElementById('message').value.trim());
+      const data = new FormData(form);
+      data.append('access_key', '1e465e69-7c4d-4a98-9e09-907d8d8bed7e');
+      data.append('subject', `New Lead from devcoconstructionllc.com — ${svc}`);
+      data.append('from_name', 'Devco Construction Website');
 
-      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfjczOPVcfTe6SkGqmJbkFmSxoVEL01vHPjZ1XJXGcY6QKeXA/formResponse', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: params,
-        mode: 'no-cors'
+        body: data
       });
 
-      formSuccess.style.display = 'block';
-      form.reset();
+      const result = await res.json();
 
+      if (result.success) {
+        formSuccess.style.display = 'block';
+        form.reset();
+      } else {
+        throw new Error('Submission failed');
+      }
     } catch (err) {
-      // no-cors always triggers catch — show success anyway since data was sent
-      formSuccess.style.display = 'block';
-      form.reset();
+      formError.style.display = 'block';
+      formError.innerHTML = '⚠️ Something went wrong. Call or text Brian directly at <a href="tel:3853810982">(385) 381-0982</a>.';
     } finally {
       submitBtn.disabled = false;
       submitBtn.innerHTML = '✉️ Send My Free Estimate Request';
