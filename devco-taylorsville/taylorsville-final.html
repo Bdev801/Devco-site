@@ -663,12 +663,14 @@
     if (!fname || !phone || !zip || !svc) { formError.style.display = 'block'; formError.textContent = '⚠️ Please fill in all required fields.'; return; }
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
     try {
       const data = new FormData(form);
+      data.append('access_key', '1e465e69-7c4d-4a98-9e09-907d8d8bed7e');
       data.append('_subject', `New Lead — Taylorsville UT — ${svc}`);
+      data.append('subject', `New Lead — Taylorsville UT — ${svc}`);
+      data.append('from_name', 'Devco Construction Website');
       data.append('source', 'Taylorsville Landing Page');
-      const res = await fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
       if (res.ok) { formSuccess.style.display = 'block'; form.reset(); }
       else { throw new Error('failed'); }
     } catch { formError.style.display = 'block'; formError.innerHTML = '⚠️ Something went wrong. Call or text Brian at <a href="tel:3853810982">(385) 381-0982</a>.'; }
