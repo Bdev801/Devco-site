@@ -1,0 +1,32 @@
+sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://devcoconstructionllc.com/</loc></url>
+  <url><loc>https://devcoconstructionllc.com/index.html</loc></url>
+
+  <url><loc>https://devcoconstructionllc.com/american-fork.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/bluffdale.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/bountiful.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/centerville.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/clearfield.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/cottonwood-heights.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/draper.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/eagle-mountain.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/farmington.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/herriman.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/holladay.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/kearns.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/layton.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/lehi.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/lindon.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/magna.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/ogden.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/payson.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/pleasant-grove.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/provo.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/saratoga-springs.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/spanish-fork.html</loc></url>
+  <url><loc>https://devcoconstructionllc.com/springville.html</loc></url>
+
+</urlset>
