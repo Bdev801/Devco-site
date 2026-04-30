@@ -185,12 +185,26 @@
     .reveal.visible{opacity:1;transform:none}
     @media(max-width:900px){.intro-inner,.contact-inner{grid-template-columns:1fr;gap:2.5rem}.nav-links{display:none}.nav-hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:1rem 5% 1.5rem;gap:1rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}.mobile-cta-bar{display:flex}body{padding-bottom:62px}.form-row{grid-template-columns:1fr}}
     @media(max-width:600px){.hero{min-height:75vh;padding-top:50px}.hero-trust{gap:1.2rem}.services-grid{grid-template-columns:1fr}.process-steps{grid-template-columns:1fr 1fr}}
-  </style>
+      /* logo-img-standard */
+    .nav-logo img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 44px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
 <nav class="nav" role="navigation" aria-label="Main navigation">
-  <a href="/" class="nav-logo">Devco <span>Construction</span></a>
+    <a href="/index.html" class="nav-logo" aria-label="Devco Construction LLC home">
+    <img src="/assets/images/devco-construction-llc-logo.png" alt="Devco Construction LLC licensed and insured logo">
+  </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/#services">Services</a></li>
     <li><a href="/#gallery">Gallery</a></li>

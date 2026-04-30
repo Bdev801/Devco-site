@@ -254,12 +254,26 @@
       .services-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr 1fr; }
     }
-  </style>
+      /* logo-img-standard */
+    .nav-logo img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 44px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
 <nav class="nav" role="navigation" aria-label="Main navigation">
-  <a href="/" class="nav-logo">Devco <span>Construction</span></a>
+    <a href="/index.html" class="nav-logo" aria-label="Devco Construction LLC home">
+    <img src="/assets/images/devco-construction-llc-logo.png" alt="Devco Construction LLC licensed and insured logo">
+  </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/#services">Services</a></li>
     <li><a href="/#gallery">Gallery</a></li>

@@ -117,12 +117,26 @@
     .reveal.visible{opacity:1;transform:none}
     @media(max-width:900px){.nav-links{display:none}.nav-hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:1rem 5% 1.5rem;gap:1rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}.mobile-cta-bar{display:flex} body{padding-bottom:62px}}
     @media(max-width:600px){.article-hero{padding:50px 5% 40px}.summary-row{grid-template-columns:1fr 1fr}.cost-table{font-size:.82rem}.cost-table th,.cost-table td{padding:.65rem}}
-  </style>
+      /* logo-img-standard */
+    .nav-logo img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 44px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
 <nav class="nav" role="navigation" aria-label="Main navigation">
-  <a href="../index.html" class="nav-logo"><div class="nav-logo-text">Devco Construction<span>LLC · Salt Lake County, UT</span></div></a>
+    <a href="/index.html" class="nav-logo" aria-label="Devco Construction LLC home">
+    <img src="/assets/images/devco-construction-llc-logo.png" alt="Devco Construction LLC licensed and insured logo">
+  </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="../index.html#services">Services</a></li>
     <li><a href="../index.html#gallery">Gallery</a></li>
