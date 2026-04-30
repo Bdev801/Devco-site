@@ -116,10 +116,10 @@
     .nav-cta:hover { background: var(--gold-lt) !important; }
     .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
     .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
-    .mobile-cta-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: var(--gold); padding: 14px 20px; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 -4px 20px rgba(0,0,0,.2); }
-    .mobile-cta-bar a { color: var(--navy); font-weight: 700; font-size: 1rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    .mobile-cta-bar .divider { color: var(--navy); opacity: .4; }
-    .breadcrumb { background: var(--light); padding: .75rem 5%; border-bottom: 1px solid var(--border); font-size: .8rem; color: var(--gray); }
+    .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; box-shadow: 0 -4px 20px rgba(0,0,0,.2); }
+    .mobile-cta a { flex: 1; min-width: 0; text-align: center; padding: 14px 10px; font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; justify-content: center; }
+    .mobile-cta .call-btn { background: #c59d5f; color: #000; }
+    .mobile-cta .estimate-btn { background: #1c2b39; color: #fff; }    .breadcrumb { background: var(--light); padding: .75rem 5%; border-bottom: 1px solid var(--border); font-size: .8rem; color: var(--gray); }
     .breadcrumb a { color: var(--gold); text-decoration: none; }
     .breadcrumb span { margin: 0 .4rem; }
     .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 60%, #0e2a47 100%); min-height: 82vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 80px 5% 60px; }
@@ -244,7 +244,7 @@
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
       .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--navy); padding: 1rem 5% 1.5rem; gap: 1rem; box-shadow: 0 8px 30px rgba(0,0,0,.3); }
-      .mobile-cta-bar { display: flex; }
+      .mobile-cta { display: flex; }
       body { padding-bottom: 62px; }
       .form-row { grid-template-columns: 1fr; }
     }
@@ -315,10 +315,9 @@
   </button>
 </nav>
 
-<div class="mobile-cta-bar" role="complementary">
-  <a href="tel:3853810982">📞 Call for a Free Estimate</a>
-  <span class="divider">|</span>
-  <a href="#contact">Get Estimate →</a>
+<div class="mobile-cta" role="complementary" aria-label="Quick contact">
+  <a href="tel:3853810982" class="call-btn">Call (385) 381-0982</a>
+  <a href="#contact" class="estimate-btn">Get Estimate →</a>
 </div>
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
