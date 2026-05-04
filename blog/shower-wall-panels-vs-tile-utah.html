@@ -26,7 +26,7 @@
   }
   </script>
 
-  <link rel="icon" type="image/png" href="../devco-logo.png" />
+  <link rel="icon" type="image/png" href="/assets/images/devco-construction-llc-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -42,11 +42,11 @@
     .nav{position:sticky;top:0;z-index:1000;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:68px;box-shadow:0 2px 20px rgba(0,0,0,.3)}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
     .nav-logo img{height:46px;width:auto}
-    .nav-logo-text{font-family:'Playfair Display',serif;color:var(--white);font-size:1.1rem;font-weight:700;letter-spacing:.02em;line-height:1.2}
-    .nav-logo-text span{color:var(--gold);display:block;font-size:.7rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase}
+    .nav-logo-text{font-family:'Playfair Display',serif;color:var(--white);font-size:1.1rem;font-weight:700;letter-spacing:.02em;line-height:1.2;white-space:nowrap}
+    .nav-logo-text strong{color:var(--gold);font-weight:700}
     .nav-links{display:flex;gap:2rem;list-style:none}
     .nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
-    .nav-links a:hover{color:var(--gold)}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
     .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:.45rem 1.1rem;border-radius:4px;font-weight:600!important}
     .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
     .nav-hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px}
@@ -224,20 +224,22 @@
   <button class="toast-close" id="toastClose" aria-label="Dismiss">✕</button>
   <div class="toast-icon">🚿</div>
   <div class="toast-msg"><strong>Interested in a no-grout shower?</strong> Devco installs Sentrel panels across all of Salt Lake County.</div>
-  <a href="../sentrel-shower-panels.html" class="toast-btn">See the Sentrel Page →</a>
+  <a href="/sentrel-shower-panels.html" class="toast-btn">See the Sentrel Page →</a>
 </div>
 
-<nav class="nav" role="navigation">
-  <a href="../index.html" class="nav-logo">
-    <img src="../devco-logo.png" alt="Devco Construction LLC" onerror="this.style.display='none'" />
-    <div class="nav-logo-text">Devco Construction<span>LLC · Salt Lake County, UT</span></div>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="/index.html" aria-label="Devco Construction LLC home">
+    <img src="/assets/images/devco-construction-llc-logo.png" alt="Devco Construction LLC licensed and insured logo" />
+    <span class="nav-logo-text">Devco <strong>Construction</strong></span>
   </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="../index.html#services">Services</a></li>
-    <li><a href="../index.html#gallery">Gallery</a></li>
-    <li><a href="../index.html#about">About</a></li>
-    <li><a href="index.html">Tips &amp; Guides</a></li>
-    <li><a href="../index.html#contact" class="nav-cta">Free Estimate</a></li>
+    <li><a href="/index.html#services">Services</a></li>
+    <li><a href="/index.html#gallery">Gallery</a></li>
+    <li><a href="/case-studies/index.html">Case Studies</a></li>
+    <li><a class="active" href="/blog/index.html">Tips &amp; Guides</a></li>
+    <li><a href="/index.html#about">About</a></li>
+    <li><a href="/index.html#faq">FAQ</a></li>
+    <li><a href="/index.html#contact" class="nav-cta">Free Estimate</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -247,15 +249,15 @@
 <div class="mobile-cta-bar">
   <a href="tel:3853810982">📞 Call Brian: (385) 381-0982</a>
   <span class="divider">|</span>
-  <a href="../index.html#contact">Free Estimate →</a>
+  <a href="/index.html#contact">Free Estimate →</a>
 </div>
 
 <!-- HERO -->
 <header class="article-hero">
   <div class="article-hero-inner">
     <nav class="breadcrumb">
-      <a href="../index.html">Home</a><span>›</span>
-      <a href="index.html">Tips &amp; Guides</a><span>›</span>
+      <a href="/index.html">Home</a><span>›</span>
+      <a href="/blog/index.html">Tips &amp; Guides</a><span>›</span>
       <span style="color:rgba(255,255,255,.7)">Shower Wall Panels vs. Tile</span>
     </nav>
     <div class="article-tag">🚿 Shower Guide</div>
@@ -488,7 +490,7 @@
       <div class="sidebar-card-head"><h4>Want to See Samples In Person?</h4></div>
       <div class="sidebar-card-body">
         <p>Brian brings Sentrel samples to every estimate walk-through. See the colors in your bathroom, in your lighting — free, no obligation.</p>
-        <a href="../index.html#contact" class="btn-cta-full">📋 Schedule a Free Estimate</a>
+        <a href="/index.html#contact" class="btn-cta-full">📋 Schedule a Free Estimate</a>
         <a href="tel:3853810982" class="btn-call-full">📞 (385) 381-0982</a>
       </div>
     </div>
@@ -508,7 +510,7 @@
     <div class="sidebar-card">
       <div class="sidebar-card-head"><h4>🔗 Related</h4></div>
       <div class="sidebar-card-body" style="display:flex;flex-direction:column;gap:.7rem">
-        <a href="../sentrel-shower-panels.html" class="service-link-card">
+        <a href="/sentrel-shower-panels.html" class="service-link-card">
           <div class="slc-icon">✨</div>
           <div><strong>Sentrel Service Page</strong><span>See the full product overview</span></div>
         </a>
@@ -533,7 +535,7 @@
     <h2>Ready to See <em>Sentrel In Person?</em></h2>
     <p>Brian brings samples to every free estimate walk-through. See the colors in your bathroom, get a line-item quote, and ask every question you have — no obligation, no pressure.</p>
     <div class="cta-btns">
-      <a href="../index.html#contact" class="btn-primary">📋 Request a Free Estimate</a>
+      <a href="/index.html#contact" class="btn-primary">📋 Request a Free Estimate</a>
       <a href="tel:3853810982" class="btn-ghost">📞 (385) 381-0982</a>
     </div>
     <p style="color:rgba(255,255,255,.35);font-size:.78rem;margin-top:1.5rem">BBB A+ Rated · Licensed &amp; Insured in Utah · Serving all of Salt Lake County</p>
@@ -543,7 +545,7 @@
 <footer>
   <div class="footer-inner">
     <div><strong style="color:var(--white)">Devco Construction LLC</strong> &nbsp;·&nbsp; West Valley City, UT &nbsp;·&nbsp; <a href="tel:3853810982">(385) 381-0982</a> &nbsp;·&nbsp; <a href="mailto:brian@devcoservices.net">brian@devcoservices.net</a></div>
-    <div>© 2026 Devco Construction LLC. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Tips &amp; Guides</a></div>
+    <div>© 2026 Devco Construction LLC. All rights reserved. &nbsp;·&nbsp; <a href="/blog/index.html">Tips &amp; Guides</a></div>
   </div>
 </footer>
 

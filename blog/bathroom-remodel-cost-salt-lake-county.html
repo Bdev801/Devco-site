@@ -38,7 +38,7 @@
   ]}
   </script>
 
-  <link rel="icon" type="image/png" href="../devco-logo.png" />
+  <link rel="icon" type="image/png" href="/assets/images/devco-construction-llc-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -53,11 +53,11 @@
     .nav{position:sticky;top:0;z-index:1000;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:68px;box-shadow:0 2px 20px rgba(0,0,0,.3)}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
     .nav-logo img{height:46px;width:auto}
-    .nav-logo-text{font-family:'Playfair Display',serif;color:var(--white);font-size:1.1rem;font-weight:700;letter-spacing:.02em;line-height:1.2}
-    .nav-logo-text span{color:var(--gold);display:block;font-size:.7rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase}
+    .nav-logo-text{font-family:'Playfair Display',serif;color:var(--white);font-size:1.1rem;font-weight:700;letter-spacing:.02em;line-height:1.2;white-space:nowrap}
+    .nav-logo-text strong{color:var(--gold);font-weight:700}
     .nav-links{display:flex;gap:2rem;list-style:none}
     .nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
-    .nav-links a:hover{color:var(--gold)}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
     .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:.45rem 1.1rem;border-radius:4px;font-weight:600!important}
     .nav-cta:hover{background:var(--gold-lt)!important}
     .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
@@ -312,21 +312,23 @@
   <button class="toast-close" id="toastClose" aria-label="Dismiss">✕</button>
   <div class="toast-icon">💡</div>
   <div class="toast-msg"><strong>Sounds like you're doing your research.</strong> Ready to get a real number for your bathroom?</div>
-  <a href="../index.html#contact" class="toast-btn">Get My Free Estimate →</a>
+  <a href="/index.html#contact" class="toast-btn">Get My Free Estimate →</a>
 </div>
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
-  <a href="../index.html" class="nav-logo">
-    <img src="../devco-logo.png" alt="Devco Construction LLC" onerror="this.style.display='none'" />
-    <div class="nav-logo-text">Devco Construction<span>LLC · Salt Lake County, UT</span></div>
+  <a class="nav-logo" href="/index.html" aria-label="Devco Construction LLC home">
+    <img src="/assets/images/devco-construction-llc-logo.png" alt="Devco Construction LLC licensed and insured logo" />
+    <span class="nav-logo-text">Devco <strong>Construction</strong></span>
   </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="../index.html#services">Services</a></li>
-    <li><a href="../index.html#gallery">Gallery</a></li>
-    <li><a href="../index.html#about">About</a></li>
-    <li><a href="index.html">Tips &amp; Guides</a></li>
-    <li><a href="../index.html#contact" class="nav-cta">Free Estimate</a></li>
+    <li><a href="/index.html#services">Services</a></li>
+    <li><a href="/index.html#gallery">Gallery</a></li>
+    <li><a href="/case-studies/index.html">Case Studies</a></li>
+    <li><a class="active" href="/blog/index.html">Tips &amp; Guides</a></li>
+    <li><a href="/index.html#about">About</a></li>
+    <li><a href="/index.html#faq">FAQ</a></li>
+    <li><a href="/index.html#contact" class="nav-cta">Free Estimate</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -336,16 +338,16 @@
 <div class="mobile-cta-bar">
   <a href="tel:3853810982">📞 Call Brian: (385) 381-0982</a>
   <span class="divider">|</span>
-  <a href="../index.html#contact">Free Estimate →</a>
+  <a href="/index.html#contact">Free Estimate →</a>
 </div>
 
 <!-- ARTICLE HERO -->
 <header class="article-hero">
   <div class="article-hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../index.html">Home</a>
+      <a href="/index.html">Home</a>
       <span>›</span>
-      <a href="index.html">Tips &amp; Guides</a>
+      <a href="/blog/index.html">Tips &amp; Guides</a>
       <span>›</span>
       <span style="color:rgba(255,255,255,.7)">Bathroom Remodel Cost</span>
     </nav>
@@ -506,7 +508,7 @@
             <div class="est-result-label" id="estLabel">Salt Lake County · 2026 pricing</div>
             <div class="est-result-note" id="estNote"></div>
             <div class="est-cta-row">
-              <a href="../index.html#contact" class="est-btn-primary">📋 Get My Real Estimate — Free</a>
+              <a href="/index.html#contact" class="est-btn-primary">📋 Get My Real Estimate — Free</a>
               <button class="est-btn-reset" onclick="resetEstimator()">↺ Start Over</button>
             </div>
           </div>
@@ -843,7 +845,7 @@
       </div>
       <div class="sidebar-card-body">
         <p>We'll come out, walk your bathroom, and give you a line-item estimate — free, no obligation, no pressure.</p>
-        <a href="../index.html#contact" class="btn-cta-full">📋 Get a Free Estimate</a>
+        <a href="/index.html#contact" class="btn-cta-full">📋 Get a Free Estimate</a>
         <a href="tel:3853810982" class="btn-call-full">📞 (385) 381-0982</a>
       </div>
     </div>
@@ -899,7 +901,7 @@
     <h2>Ready to Get Your <em>Real Number?</em></h2>
     <p>Stop guessing. We'll come out, see your bathroom, and hand you a written line-item estimate. No obligation, no pressure — just straight talk from a contractor who's been doing this for 25 years.</p>
     <div class="cta-banner-btns">
-      <a href="../index.html#contact" class="btn-primary">📋 Request a Free Estimate</a>
+      <a href="/index.html#contact" class="btn-primary">📋 Request a Free Estimate</a>
       <a href="tel:3853810982" class="btn-outline-white">📞 Call (385) 381-0982</a>
     </div>
     <p style="color:rgba(255,255,255,.4);font-size:.8rem;margin-top:1.5rem">BBB A+ Rated · Licensed &amp; Insured in Utah · Serving all of Salt Lake County</p>
@@ -909,7 +911,7 @@
 <footer>
   <div class="footer-inner">
     <div><strong style="color:var(--white)">Devco Construction LLC</strong> &nbsp;·&nbsp; West Valley City, UT &nbsp;·&nbsp; <a href="tel:3853810982">(385) 381-0982</a> &nbsp;·&nbsp; <a href="mailto:brian@devcoservices.net">brian@devcoservices.net</a></div>
-    <div>© 2026 Devco Construction LLC. All rights reserved. &nbsp;·&nbsp; Licensed &amp; Insured in Utah &nbsp;·&nbsp; BBB Accredited &nbsp;·&nbsp; <a href="index.html">Tips &amp; Guides</a></div>
+    <div>© 2026 Devco Construction LLC. All rights reserved. &nbsp;·&nbsp; Licensed &amp; Insured in Utah &nbsp;·&nbsp; BBB Accredited &nbsp;·&nbsp; <a href="/blog/index.html">Tips &amp; Guides</a></div>
   </div>
 </footer>
 
